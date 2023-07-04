@@ -10,9 +10,12 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-}
+  text-align: left;
+     }
 
 .title-bar{
+  display:flex;
+  box-shadow: 1px 1px 10px 2px #5E087D;
   background-color: var(--title-bar-color);
   border: solid black 2px;
   height: 35px;
@@ -26,19 +29,31 @@ body {
   width:29vw;
 }
 
+.editor-wrapper {
+  display: block;
+}
+
 .editor-wrapper #editor{
-  display: fixed;
   width: 30vw;
   height: 50vh;
+  padding-top: 5px;
+  padding-left: 5px;
+  margin-bottom: -5px;
   position: relative;
   border: solid black 2px;
+  box-shadow: 1px 1px 10px 2px #5E087D;
 }
 
 .preview-wrapper #preview {
-  display: fixed;
   width: 35vw;
   height: 90rem;
+  padding: 0 1rem;
   background-color: var(--box-color);
   position: relative;
   border: solid black 2px;
+  box-shadow: 1px 1px 10px 2px #5E087D;
+}
+
+.fa-arrow-up-right-from-square {
+  margin-left: auto;
 }
