@@ -1,0 +1,44 @@
+:root {
+  --box-color: #CB90DF;
+  --title-bar-color: #C373DF;
+  --title-font-color: #67287E;
+  --title-font: Andale Mono, monospace;
+}
+
+body {
+  background-color: #BD56E1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.title-bar{
+  background-color: var(--title-bar-color);
+  border: solid black 2px;
+  height: 35px;
+  font-family: var(--title-font);
+  font-weight: bold;
+  font-size: 30px;
+  padding: 10px;
+}
+
+.editor{
+  width:29vw;
+}
+
+.editor-wrapper #editor{
+  display: fixed;
+  width: 30vw;
+  height: 50vh;
+  position: relative;
+  border: solid black 2px;
+}
+
+.preview-wrapper #preview {
+  display: fixed;
+  width: 35vw;
+  height: 90rem;
+  background-color: var(--box-color);
+  position: relative;
+  border: solid black 2px;
+}
